@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EDB35F9185F2B4300D4C42C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDB35F8185F2B4300D4C42C /* Foundation.framework */; };
+		7EDB35FB185F2B4300D4C42C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDB35FA185F2B4300D4C42C /* CoreGraphics.framework */; };
+		7EDB35FD185F2B4300D4C42C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDB35FC185F2B4300D4C42C /* UIKit.framework */; };
+		7EDB3603185F2B4300D4C42C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB3601185F2B4300D4C42C /* InfoPlist.strings */; };
+		7EDB3605185F2B4300D4C42C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB3604185F2B4300D4C42C /* main.m */; };
+		7EDB3609185F2B4300D4C42C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB3608185F2B4300D4C42C /* AppDelegate.m */; };
+		7EDB360B185F2B4300D4C42C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB360A185F2B4300D4C42C /* Images.xcassets */; };
+		7EDB3612185F2B4300D4C42C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDB3611185F2B4300D4C42C /* XCTest.framework */; };
+		7EDB3613185F2B4300D4C42C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDB35F8185F2B4300D4C42C /* Foundation.framework */; };
+		7EDB3614185F2B4300D4C42C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDB35FC185F2B4300D4C42C /* UIKit.framework */; };
+		7EDB361C185F2B4300D4C42C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB361A185F2B4300D4C42C /* InfoPlist.strings */; };
+		7EDB361E185F2B4300D4C42C /* skviewleakreproTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB361D185F2B4300D4C42C /* skviewleakreproTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EDB3615185F2B4300D4C42C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EDB35ED185F2B4300D4C42C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EDB35F4185F2B4300D4C42C;
+			remoteInfo = skviewleakrepro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7EDB35F5185F2B4300D4C42C /* skviewleakrepro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skviewleakrepro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDB35F8185F2B4300D4C42C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7EDB35FA185F2B4300D4C42C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7EDB35FC185F2B4300D4C42C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7EDB3600185F2B4300D4C42C /* skviewleakrepro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "skviewleakrepro-Info.plist"; sourceTree = "<group>"; };
+		7EDB3602185F2B4300D4C42C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7EDB3604185F2B4300D4C42C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EDB3606185F2B4300D4C42C /* skviewleakrepro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "skviewleakrepro-Prefix.pch"; sourceTree = "<group>"; };
+		7EDB3607185F2B4300D4C42C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7EDB3608185F2B4300D4C42C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7EDB360A185F2B4300D4C42C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7EDB3610185F2B4300D4C42C /* skviewleakreproTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skviewleakreproTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDB3611185F2B4300D4C42C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7EDB3619185F2B4300D4C42C /* skviewleakreproTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "skviewleakreproTests-Info.plist"; sourceTree = "<group>"; };
+		7EDB361B185F2B4300D4C42C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7EDB361D185F2B4300D4C42C /* skviewleakreproTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = skviewleakreproTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EDB35F2185F2B4300D4C42C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDB35FB185F2B4300D4C42C /* CoreGraphics.framework in Frameworks */,
+				7EDB35FD185F2B4300D4C42C /* UIKit.framework in Frameworks */,
+				7EDB35F9185F2B4300D4C42C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDB360D185F2B4300D4C42C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDB3612185F2B4300D4C42C /* XCTest.framework in Frameworks */,
+				7EDB3614185F2B4300D4C42C /* UIKit.framework in Frameworks */,
+				7EDB3613185F2B4300D4C42C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EDB35EC185F2B4300D4C42C = {
+			isa = PBXGroup;
+			children = (
+				7EDB35FE185F2B4300D4C42C /* skviewleakrepro */,
+				7EDB3617185F2B4300D4C42C /* skviewleakreproTests */,
+				7EDB35F7185F2B4300D4C42C /* Frameworks */,
+				7EDB35F6185F2B4300D4C42C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EDB35F6185F2B4300D4C42C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EDB35F5185F2B4300D4C42C /* skviewleakrepro.app */,
+				7EDB3610185F2B4300D4C42C /* skviewleakreproTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EDB35F7185F2B4300D4C42C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EDB35F8185F2B4300D4C42C /* Foundation.framework */,
+				7EDB35FA185F2B4300D4C42C /* CoreGraphics.framework */,
+				7EDB35FC185F2B4300D4C42C /* UIKit.framework */,
+				7EDB3611185F2B4300D4C42C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EDB35FE185F2B4300D4C42C /* skviewleakrepro */ = {
+			isa = PBXGroup;
+			children = (
+				7EDB3607185F2B4300D4C42C /* AppDelegate.h */,
+				7EDB3608185F2B4300D4C42C /* AppDelegate.m */,
+				7EDB360A185F2B4300D4C42C /* Images.xcassets */,
+				7EDB35FF185F2B4300D4C42C /* Supporting Files */,
+			);
+			path = skviewleakrepro;
+			sourceTree = "<group>";
+		};
+		7EDB35FF185F2B4300D4C42C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EDB3600185F2B4300D4C42C /* skviewleakrepro-Info.plist */,
+				7EDB3601185F2B4300D4C42C /* InfoPlist.strings */,
+				7EDB3604185F2B4300D4C42C /* main.m */,
+				7EDB3606185F2B4300D4C42C /* skviewleakrepro-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EDB3617185F2B4300D4C42C /* skviewleakreproTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EDB361D185F2B4300D4C42C /* skviewleakreproTests.m */,
+				7EDB3618185F2B4300D4C42C /* Supporting Files */,
+			);
+			path = skviewleakreproTests;
+			sourceTree = "<group>";
+		};
+		7EDB3618185F2B4300D4C42C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EDB3619185F2B4300D4C42C /* skviewleakreproTests-Info.plist */,
+				7EDB361A185F2B4300D4C42C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EDB35F4185F2B4300D4C42C /* skviewleakrepro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EDB3621185F2B4300D4C42C /* Build configuration list for PBXNativeTarget "skviewleakrepro" */;
+			buildPhases = (
+				7EDB35F1185F2B4300D4C42C /* Sources */,
+				7EDB35F2185F2B4300D4C42C /* Frameworks */,
+				7EDB35F3185F2B4300D4C42C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = skviewleakrepro;
+			productName = skviewleakrepro;
+			productReference = 7EDB35F5185F2B4300D4C42C /* skviewleakrepro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EDB360F185F2B4300D4C42C /* skviewleakreproTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EDB3624185F2B4300D4C42C /* Build configuration list for PBXNativeTarget "skviewleakreproTests" */;
+			buildPhases = (
+				7EDB360C185F2B4300D4C42C /* Sources */,
+				7EDB360D185F2B4300D4C42C /* Frameworks */,
+				7EDB360E185F2B4300D4C42C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EDB3616185F2B4300D4C42C /* PBXTargetDependency */,
+			);
+			name = skviewleakreproTests;
+			productName = skviewleakreproTests;
+			productReference = 7EDB3610185F2B4300D4C42C /* skviewleakreproTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EDB35ED185F2B4300D4C42C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Rolf Bjarne Kvinge";
+				TargetAttributes = {
+					7EDB360F185F2B4300D4C42C = {
+						TestTargetID = 7EDB35F4185F2B4300D4C42C;
+					};
+				};
+			};
+			buildConfigurationList = 7EDB35F0185F2B4300D4C42C /* Build configuration list for PBXProject "skviewleakrepro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7EDB35EC185F2B4300D4C42C;
+			productRefGroup = 7EDB35F6185F2B4300D4C42C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EDB35F4185F2B4300D4C42C /* skviewleakrepro */,
+				7EDB360F185F2B4300D4C42C /* skviewleakreproTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EDB35F3185F2B4300D4C42C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDB3603185F2B4300D4C42C /* InfoPlist.strings in Resources */,
+				7EDB360B185F2B4300D4C42C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDB360E185F2B4300D4C42C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDB361C185F2B4300D4C42C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EDB35F1185F2B4300D4C42C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDB3609185F2B4300D4C42C /* AppDelegate.m in Sources */,
+				7EDB3605185F2B4300D4C42C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDB360C185F2B4300D4C42C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDB361E185F2B4300D4C42C /* skviewleakreproTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EDB3616185F2B4300D4C42C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EDB35F4185F2B4300D4C42C /* skviewleakrepro */;
+			targetProxy = 7EDB3615185F2B4300D4C42C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7EDB3601185F2B4300D4C42C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EDB3602185F2B4300D4C42C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7EDB361A185F2B4300D4C42C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EDB361B185F2B4300D4C42C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EDB361F185F2B4300D4C42C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EDB3620185F2B4300D4C42C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EDB3622185F2B4300D4C42C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "skviewleakrepro/skviewleakrepro-Prefix.pch";
+				INFOPLIST_FILE = "skviewleakrepro/skviewleakrepro-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7EDB3623185F2B4300D4C42C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "skviewleakrepro/skviewleakrepro-Prefix.pch";
+				INFOPLIST_FILE = "skviewleakrepro/skviewleakrepro-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7EDB3625185F2B4300D4C42C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/skviewleakrepro.app/skviewleakrepro";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "skviewleakrepro/skviewleakrepro-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "skviewleakreproTests/skviewleakreproTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7EDB3626185F2B4300D4C42C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/skviewleakrepro.app/skviewleakrepro";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "skviewleakrepro/skviewleakrepro-Prefix.pch";
+				INFOPLIST_FILE = "skviewleakreproTests/skviewleakreproTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EDB35F0185F2B4300D4C42C /* Build configuration list for PBXProject "skviewleakrepro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDB361F185F2B4300D4C42C /* Debug */,
+				7EDB3620185F2B4300D4C42C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EDB3621185F2B4300D4C42C /* Build configuration list for PBXNativeTarget "skviewleakrepro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDB3622185F2B4300D4C42C /* Debug */,
+				7EDB3623185F2B4300D4C42C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7EDB3624185F2B4300D4C42C /* Build configuration list for PBXNativeTarget "skviewleakreproTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDB3625185F2B4300D4C42C /* Debug */,
+				7EDB3626185F2B4300D4C42C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EDB35ED185F2B4300D4C42C /* Project object */;
+}
