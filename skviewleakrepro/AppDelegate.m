@@ -7,8 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import <SpriteKit/SpriteKit.h>
 
 @implementation AppDelegate
+
+- (void) leak: (NSTimer *) timer
+{
+    SKView *view = [[SKView alloc] init];
+    NSLog (@"Created SKView: %@", view);
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -16,6 +23,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(leak:) userInfo:nil repeats:YES];
+    
     return YES;
 }
 
